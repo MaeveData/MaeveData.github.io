@@ -4,9 +4,11 @@
 - if you create a pandas dataframe and it contains a nested json, you can create 
   multiple columns using df.json_
   - In this example, a df made from results had a column which had a dictionary=:
-    ```data = requests.get(some_url)
+    ```
+    data = requests.get(some_url)
     results = json.loads(data.text)
-    df2 = pd.json_normalize(results)```
+    df2 = pd.json_normalize(results)
+    ```
 - [List of Public APIs](https://github.com/public-apis/public-apis)
 
 
