@@ -10,7 +10,7 @@
     df2 = pd.json_normalize(results)
     ```
 - [List of Public APIs](https://github.com/public-apis/public-apis)
-
+- Reacquainted myself with BeautifulSoup [help page](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 
 #### 8 July 2023
