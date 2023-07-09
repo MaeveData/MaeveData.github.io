@@ -1,5 +1,15 @@
 ### Things I've found out this week
 
+#### 9 July 2023
+- if you create a pandas dataframe and it contains a nested json, you can create 
+  multiple columns using df.json_
+  - In this example, a df made from results had a column which had a dictionary=:
+    data = requests.get(some_url)
+    results = json.loads(data.text)
+    df2 = pd.json_normalize(results)
+
+
+
 #### 8 July 2023
 
 I really need to keep better track of my learning, so I'll attempt to keep some notes in here.  I'm sure I'll modify things as I go, but this is a start.
