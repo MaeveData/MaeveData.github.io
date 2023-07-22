@@ -7,13 +7,12 @@ FROM EMPLOYEES AS E, DEPARTMENTS AS D
 WHERE E.DEP_ID = D.DEPT_ID_DEP
 ORDER BY DEP_NAME, E.L_NAME DESC;
 ```
-SQL Command to get average salaries by department
+SQL Command to get average salaries by department for departments with fewer than 4 people
 ```
-SELECT DEP_ID AS DEPARTMENT_ID, 
-COUNT(*) AS 'NUM_EMPLOYEES', 
-AVG(SALARY) AS AVG_SALARY 
-FROM EMPLOYEES 
-GROUP BY DEP_ID 
+SELECT DEP_ID, COUNT(*) AS "NUM_EMPLOYEES", AVG(SALARY) AS "AVG_SALARY"
+FROM EMPLOYEES
+GROUP BY DEP_ID
+HAVING count(*) < 4
 ORDER BY AVG_SALARY;
 ```
 
