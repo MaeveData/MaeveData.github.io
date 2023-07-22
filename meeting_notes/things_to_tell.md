@@ -7,6 +7,10 @@ FROM EMPLOYEES AS E, DEPARTMENTS AS D
 WHERE E.DEP_ID = D.DEPT_ID_DEP
 ORDER BY DEP_NAME, E.L_NAME DESC;
 ```
+SQL Command to get average salaries by department
+```
+SELECT DEP_ID AS DEPARTMENT_ID, COUNT(DEP_ID) AS COUNT_IN_DEPT, AVG(SALARY) AS AVG_SALARY FROM EMPLOYEES GROUP BY DEP_ID;
+```
 
 #### 9 July 2023
 - if you create a pandas dataframe and it contains a nested json, you can create 
