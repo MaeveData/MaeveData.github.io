@@ -1,4 +1,12 @@
 ### Things I've found out this week
+#### 22 July 2023
+Helpful SQL Command to join output from two tables, without a JOIN or MERGE, also makes use of aliases:
+```
+SELECT E.F_NAME, E.L_NAME, D.DEP_NAME  
+FROM EMPLOYEES AS E, DEPARTMENTS AS D 
+WHERE E.DEP_ID = D.DEPT_ID_DEP
+ORDER BY DEP_NAME, E.L_NAME DESC;
+```
 
 #### 9 July 2023
 - if you create a pandas dataframe and it contains a nested json, you can create 
